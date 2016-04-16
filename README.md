@@ -14,7 +14,7 @@ Nginx Docker Image
 
 The quickest but not the best way to get it up is:
 
-```{r, engine='bash', count_lines}
+```bash
 docker run --detach --publish 80:80 --publish 443:443 creased/debian-nginx
 ```
 
@@ -33,13 +33,13 @@ Let's suppose that `debian-nginx` is the name of your container.
 
 Using `docker logs`:
 
-```{r, engine='bash', count_lines}
+```bash
 docker logs --follow debian-nginx
 ```
 
 Using `docker attach`:
 
-```{r, engine='bash', count_lines}
+```bash
 docker attach --detach-keys="ctrl-w" debian-nginx
 ```
 
@@ -47,7 +47,7 @@ docker attach --detach-keys="ctrl-w" debian-nginx
 
 Let's suppose that `debian-nginx` is the name of your container:
 
-```{r, engine='bash', count_lines}
+```bash
 docker exec --interactive --tty debian-nginx bash
 ```
 
