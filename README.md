@@ -1,12 +1,3 @@
-<!--[metadata]>
-+++
-title = "Nginx Docker Image"
-description = "PHP-FPM and Nginx Docker Image based on Debian"
-author = "Baptiste MOINE <bap.moine.86@gmail.com>"
-keywords = ["debian, jessie, 8, nginx, http, fpm, php, web, docker"]
-+++
-<![end-metadata]-->
-
 Nginx Docker Image
 ==================
 
