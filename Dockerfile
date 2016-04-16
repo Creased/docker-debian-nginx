@@ -54,10 +54,8 @@ ADD files/nginx/webroot.tar.gz /usr/share/nginx/
 COPY files/start.sh /start.sh
 RUN chmod u+x /start.sh
 
-VOLUME ["/etc/nginx/"]
-VOLUME ["/etc/php5/fpm/"]
-VOLUME ["/usr/share/nginx/webroot/"]
-VOLUME ["/var/www/"]
+# Create volumes.
+VOLUME ["/etc/nginx/", "/etc/php5/fpm/", "/usr/share/nginx/webroot/", "/var/www/"]
 
 # TCP port that container will listen for connections.
 # HTTP and HTTPS.
