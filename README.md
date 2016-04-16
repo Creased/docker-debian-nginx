@@ -1,6 +1,8 @@
 Nginx Docker Image
 ==================
 
+[![](https://badge.imagelayers.io/creased/debian-nginx:latest.svg)](https://imagelayers.io/?images=creased/debian-nginx:latest 'Get your own badge on imagelayers.io')
+
 ## Setup ##
 
 The quickest but not the best way to get it up is:
