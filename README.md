@@ -17,7 +17,7 @@ When done, turn on your web browser and crawl your docker machine (e.g., http://
 
 - `/etc/nginx/`: Nginx's configuration directory ;
 - `/etc/php5/fpm/`: PHP-FPM's configuration directory ;
-- `/usr/share/nginx/`: HTTP's data directory ;
+- `/usr/share/nginx/webroot/`: HTTP's data directory ;
 - `/var/www/`: Alternative to default HTTP's data directory. Must be defined as root directory inside Nginx configuration file to be effective.
 
 ## Live display of logs ##

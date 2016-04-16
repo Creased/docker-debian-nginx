@@ -56,7 +56,7 @@ RUN chmod u+x /start.sh
 
 VOLUME ["/etc/nginx/"]
 VOLUME ["/etc/php5/fpm/"]
-VOLUME ["/usr/share/nginx/"]
+VOLUME ["/usr/share/nginx/webroot/"]
 VOLUME ["/var/www/"]
 
 # TCP port that container will listen for connections.
