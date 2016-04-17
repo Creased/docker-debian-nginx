@@ -8,7 +8,7 @@ Nginx Docker Image
 The quickest but not the best way to get it up is:
 
 ```bash
-docker run --detach --publish 80:80/tcp --publish 443:443/tcp creased/debian-nginx
+docker run --detach --publish 80:80/tcp --publish 443:443/tcp --interactive --tty --name debian-nginx creased/debian-nginx
 ```
 
 Please consider using:
