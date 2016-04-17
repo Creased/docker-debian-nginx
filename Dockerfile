@@ -48,7 +48,7 @@ ADD files/nginx/conf/ /etc/nginx.default/
 ADD files/fpm/conf/ /etc/php5/fpm.default/
 
 # Add default webroot.
-ADD files/nginx/webroot.tar.gz /usr/share/nginx/
+ADD files/nginx/webroot/ /usr/share/nginx/webroot/
 
 # Copy Startup script.
 COPY files/start.sh /start.sh
