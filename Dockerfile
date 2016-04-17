@@ -55,7 +55,7 @@ COPY ./files/start.sh /start.sh
 RUN chmod u+x /start.sh
 
 # Create volumes.
-VOLUME ["/etc/nginx/", "/etc/php5/fpm/", "/usr/share/nginx/webroot/", "/var/www/"]
+VOLUME ["/etc/nginx/", "/etc/php5/fpm/", "/usr/share/nginx/", "/var/www/"]
 
 # TCP port that container will listen for connections.
 # HTTP and HTTPS.
