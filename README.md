@@ -8,7 +8,14 @@ Nginx Docker Image
 The quickest but not the best way to get it up is:
 
 ```bash
-docker run --detach --publish 80:80 --publish 443:443 creased/debian-nginx
+docker run --detach --publish 80:80/tcp --publish 443:443/tcp creased/debian-nginx
+```
+
+Please consider using:
+
+```bash
+docker create --publish 80:80/tcp --publish 443:443/tcp --interactive --tty --name debian-nginx creased/debian-nginx
+docker start debian-nginx
 ```
 
 When done, turn on your web browser and crawl your docker machine (e.g., http://127.0.0.1/) to see your phpinfo().

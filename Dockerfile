@@ -14,7 +14,7 @@ MAINTAINER Baptiste MOINE <bap.moine.86@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 # Copy sourcelist for APT.
-COPY files/apt/sources.list /etc/apt/sources.list
+COPY ./files/apt/sources.list /etc/apt/sources.list
 
 # Note: Each RUN instruction will perform a commit of the image.
 # Install Nginx and PHP using only one instruction.
@@ -42,16 +42,16 @@ RUN rm -rf /usr/share/nginx/html/ \
 && rm /etc/php5/fpm/pool.d/www.conf
 
 # Copy default Nginx configuration files using ADD to keep directory structure (issue #15858).
-ADD files/nginx/conf/ /etc/nginx.default/
+ADD ./files/nginx/conf/ /etc/nginx.default/
 
 # Copy default PHP configuration files using ADD to keep directory structure (issue #15858).
-ADD files/fpm/conf/ /etc/php5/fpm.default/
+ADD ./files/fpm/conf/ /etc/php5/fpm.default/
 
-# Add default webroot.
-ADD files/nginx/webroot/ /usr/share/nginx/webroot/
+# Add default webroot using ADD to keep directory structure (issue #15858).
+ADD ./files/nginx/webroot/ /usr/share/nginx/webroot/
 
 # Copy Startup script.
-COPY files/start.sh /start.sh
+COPY ./files/start.sh /start.sh
 RUN chmod u+x /start.sh
 
 # Create volumes.
@@ -59,7 +59,7 @@ VOLUME ["/etc/nginx/", "/etc/php5/fpm/", "/usr/share/nginx/webroot/", "/var/www/
 
 # TCP port that container will listen for connections.
 # HTTP and HTTPS.
-EXPOSE 80 443
+EXPOSE 80/tcp 443/tcp
 
 # Alternative to: CMD ["nginx", "-g", "daemon off;"]
 CMD ["/start.sh"]
