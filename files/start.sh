@@ -35,5 +35,5 @@ ${NGINX} -V
 ${NGINX} -t
 
 # Run Nginx in background (ignoring daemon option from configuration file) then display logs.
-${NGINX} -g "daemon on;" && tail -f /usr/share/nginx/logs/error.log -f /usr/share/nginx/logs/access.log
+${NGINX} -g "daemon on;" && tail -f /usr/share/nginx/log/error.log -f /usr/share/nginx/log/access.log
 

@@ -33,11 +33,11 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys ABF5BD827BD9BF62 \
 RUN rm -rf /usr/share/nginx/html/ \
 && mkdir -p /etc/nginx.default/conf.d/ \
 && mkdir -p /etc/php5/fpm.default/pool.d/ \
-&& mkdir -p /usr/share/nginx/logs \
+&& mkdir -p /usr/share/nginx/log \
 && mkdir -p /usr/share/nginx/static \
 && mkdir -p /usr/share/nginx/webroot \
-&& touch /usr/share/nginx/logs/access.log \
-&& touch /usr/share/nginx/logs/error.log \
+&& touch /usr/share/nginx/log/access.log \
+&& touch /usr/share/nginx/log/error.log \
 && rm /etc/nginx/nginx.conf \
 && rm /etc/php5/fpm/pool.d/www.conf
 
