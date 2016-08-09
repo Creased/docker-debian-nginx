@@ -1,7 +1,7 @@
 Nginx Docker Image
 ==================
 
-[![](https://badge.imagelayers.io/creased/debian-nginx:latest.svg)](https://imagelayers.io/?images=creased/debian-nginx:latest 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/creased/debian-nginx.svg)](http://microbadger.com/images/creased/debian-nginx "Get your own image badge on microbadger.com")
 
 ## Setup ##
 
