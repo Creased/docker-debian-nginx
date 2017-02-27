@@ -4,7 +4,7 @@
 # Startup script for Nginx-Docker Container
 #
 # Written by:
-#   Baptiste MOINE <bap.moine.86@gmail.com>
+#   Baptiste MOINE <contact@bmoine.fr>
 #
 
 # Cause that configuration files are visible from volumes, let's verify that there is configuration file before trying to run.
