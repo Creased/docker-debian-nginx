@@ -2,13 +2,13 @@
 # Nginx Dockerfile
 #
 # Written by:
-#   Baptiste MOINE <bap.moine.86@gmail.com>
+#   Baptiste MOINE <contact@bmoine.fr>
 #
 
 # Pull base image (ie, Debian 8).
 FROM debian:8
 
-MAINTAINER Baptiste MOINE <bap.moine.86@gmail.com>
+MAINTAINER Baptiste MOINE <contact@bmoine.fr>
 
 # Non-interactive frontend.
 ENV DEBIAN_FRONTEND noninteractive
